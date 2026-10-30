@@ -1,0 +1,196 @@
+{
+ "etalonnage": {
+  "gain": 0.9992,
+  "offset_n": -0.0022,
+  "linearity_err_pct_fs": 0.0594,
+  "hysteresis_pct_fs": 0.1022
+ },
+ "gage_rr_protocole_initial": {
+  "repetabilite_pct": 19.5,
+  "reproductibilite_pct": 9.9,
+  "grr_pct": 21.9,
+  "piece_a_piece_pct": 97.6,
+  "ndc": 6,
+  "interaction_p_value": 0.29,
+  "sd_grr_n": 0.5099,
+  "verdict": "marginal"
+ },
+ "gage_rr_protocole_optimise": {
+  "repetabilite_pct": 10.1,
+  "reproductibilite_pct": 0.0,
+  "grr_pct": 10.1,
+  "piece_a_piece_pct": 99.5,
+  "ndc": 13,
+  "interaction_p_value": 0.915,
+  "sd_grr_n": 0.2535,
+  "verdict": "marginal"
+ },
+ "gage_rr_30_etudes": {
+  "manuel": {
+   "moyenne": 24.0,
+   "p5": 21.5,
+   "p95": 27.5
+  },
+  "optimise": {
+   "moyenne": 9.0,
+   "p5": 7.8,
+   "p95": 10.0
+  }
+ },
+ "plan_experiences_effets_grr_pct": {
+  "contact": {
+   "auto": 14.0,
+   "manual": 21.5
+  },
+  "temp_control": {
+   "False": 21.0,
+   "True": 14.5
+  },
+  "speed_mm_s": {
+   "0.5": 17.4,
+   "1.0": 17.7,
+   "2.0": 18.3
+  },
+  "rate_sps": {
+   "10": 18.2,
+   "80": 17.4
+  },
+  "averaging_window_mm": {
+   "0.02": 17.7,
+   "0.2": 17.9
+  }
+ },
+ "meilleures_configurations": [
+  {
+   "contact": "auto",
+   "temp_control": true,
+   "speed_mm_s": 2.0,
+   "rate_sps": 80,
+   "averaging_window_mm": 0.02,
+   "grr_pct": 8.5,
+   "ndc": 16,
+   "duree_essai_s": 7.5,
+   "points": 200
+  },
+  {
+   "contact": "auto",
+   "temp_control": true,
+   "speed_mm_s": 0.5,
+   "rate_sps": 10,
+   "averaging_window_mm": 0.02,
+   "grr_pct": 8.6,
+   "ndc": 16,
+   "duree_essai_s": 15.0,
+   "points": 100
+  },
+  {
+   "contact": "auto",
+   "temp_control": true,
+   "speed_mm_s": 0.5,
+   "rate_sps": 80,
+   "averaging_window_mm": 0.02,
+   "grr_pct": 8.8,
+   "ndc": 15,
+   "duree_essai_s": 15.0,
+   "points": 800
+  },
+  {
+   "contact": "auto",
+   "temp_control": true,
+   "speed_mm_s": 1.0,
+   "rate_sps": 80,
+   "averaging_window_mm": 0.2,
+   "grr_pct": 8.8,
+   "ndc": 16,
+   "duree_essai_s": 10.0,
+   "points": 400
+  },
+  {
+   "contact": "auto",
+   "temp_control": true,
+   "speed_mm_s": 2.0,
+   "rate_sps": 80,
+   "averaging_window_mm": 0.2,
+   "grr_pct": 8.9,
+   "ndc": 15,
+   "duree_essai_s": 7.5,
+   "points": 200
+  }
+ ],
+ "suivi_derive": {
+  "ligne_centrale_n": 12.45,
+  "debut_derive_jour": 35,
+  "alarme_jour": 38,
+  "retard_jours": 3,
+  "derive_au_moment_alarme_pct": 0.45
+ },
+ "incertitude": {
+  "mesure_n": 12.701,
+  "u_c_n": 0.2581,
+  "U_n_k2": 0.516,
+  "U_rel_pct": 4.06,
+  "U_moyenne_3_points_n": 0.336,
+  "U_moyenne_3_points_rel_pct": 2.64,
+  "contributions_pct": {
+   "Répétabilité (un essai)": 86.6,
+   "Reproductibilité (opérateurs)": 3.1,
+   "Masses étalons (classe M1)": 0.0,
+   "Résidu d'étalonnage (linéarité, hystérésis)": 0.4,
+   "Température de conditionnement": 8.1,
+   "Dérive thermique du zéro du capteur": 0.0,
+   "Dérive du capteur entre deux contrôles": 1.6,
+   "Pas de la vis": 0.2,
+   "Résolution d'affichage": 0.0
+  },
+  "monte_carlo": {
+   "ecart_type_n": 0.2241,
+   "intervalle_95_n": [
+    12.28,
+    13.138
+   ],
+   "demi_largeur_95_n": 0.429
+  }
+ },
+ "cartographie": {
+  "composantes_variation": {
+   "pattern_across_jar_pct": 0.83,
+   "micro_heterogeneity_pct": 1.53,
+   "gauge_pct": 0.64,
+   "pattern_p_value": 0.0016
+  },
+  "plans_echantillonnage": [
+   {
+    "plan": "centre, 1 essai",
+    "tests": 1,
+    "bias_pct": -1.93,
+    "sd_pct": 1.56,
+    "rms_error_pct": 2.48,
+    "test_time_s": 7.5
+   },
+   {
+    "plan": "centre, 3 essais",
+    "tests": 3,
+    "bias_pct": -1.96,
+    "sd_pct": 0.89,
+    "rms_error_pct": 2.16,
+    "test_time_s": 22.5
+   },
+   {
+    "plan": "diagonale, 3 points",
+    "tests": 3,
+    "bias_pct": -0.09,
+    "sd_pct": 0.92,
+    "rms_error_pct": 0.92,
+    "test_time_s": 22.5
+   },
+   {
+    "plan": "grille complète, 9 points",
+    "tests": 9,
+    "bias_pct": 0.01,
+    "sd_pct": 0.56,
+    "rms_error_pct": 0.56,
+    "test_time_s": 67.5
+   }
+  ]
+ }
+}

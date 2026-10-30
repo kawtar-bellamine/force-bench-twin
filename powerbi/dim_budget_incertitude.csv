@@ -1,0 +1,10 @@
+source,type,distribution,value,unit,divisor,sensitivity,u_n,note,contribution_pct
+Répétabilité (un essai),A,normal,0.24014396982466504,N,1.0,1.0,0.24014396982466504,"écart-type de 50 essais sur S05 : zéro de la sonde, vitesse, bruit du convertisseur, ±0,3 °C, hétérogénéité locale",86.55958966556696
+Reproductibilité (opérateurs),A,normal,0.045805467307281356,N,1.0,1.0,0.045805467307281356,"Gage R&R du protocole optimisé, moyenne de 10 études",3.1492450395913725
+Masses étalons (classe M1),B,rectangular,5e-05,relative,1.7320508075688772,12.70135378138829,0.00036665650123786,certificat d'étalonnage,0.0002017857983932834
+"Résidu d'étalonnage (linéarité, hystérésis)",B,rectangular,0.028322211536195855,N,1.7320508075688772,1.0,0.0163518364544682,erreur maximale après l'ajustement aux masses,0.4013330145576622
+Température de conditionnement,B,rectangular,0.5,°C,1.7320508075688772,0.25402707562776583,0.07333130024757202,justesse de l'enceinte × sensibilité thermique de la crème (à mesurer),8.07143193573134
+Dérive thermique du zéro du capteur,B,rectangular,0.5,°C,1.7320508075688772,0.004,0.0011547005383792516,ordre de grandeur de fiche technique,0.002001292437380487
+Dérive du capteur entre deux contrôles,B,rectangular,0.0045000000000000005,relative,1.7320508075688772,12.70135378138829,0.03299908511140741,plus grande dérive de gain avant l'alarme EWMA,1.6344649669855964
+Pas de la vis,B,rectangular,0.001,relative,1.7320508075688772,19.052030672082434,0.010999695037135802,"F ∝ profondeur^1,5, donc dF/F = 1,5 × dz/z",0.18160721855395515
+Résolution d'affichage,B,rectangular,0.0005,N,1.7320508075688772,1.0,0.0002886751345948129,"chiffre de 0,001 N",0.00012508077733628043
